@@ -4,6 +4,8 @@
 
 
 ' run on full workbook
+
+
 Sub wsfullrun()
     
     Dim ws As Worksheet
@@ -42,8 +44,6 @@ Sub TickerChallenge():
     Dim year_chg As Double
     Dim openprice As Double
     Dim closeprice As Double
-    Dim opendate As Double
-    Dim closedate As Double
     Dim lastrow As Long
     Dim prev_ticker As String
     Dim maxinc As Double
@@ -53,10 +53,7 @@ Sub TickerChallenge():
     maxinc = 0
     maxdec = 0
     maxvol = 0
-    
-    'opendate
-    opendate = 20200102
-    closedate = 20201231
+  
     
     'Total per ticker
     volume_total = 0
