@@ -1,12 +1,19 @@
 # VBA_Challenge
 
+
+
+
+' run on full workbook
 Sub wsfullrun()
+    
     Dim ws As Worksheet
+    
     Application.ScreenUpdating = False
     For Each ws In Worksheets
         ws.Select
         Call TickerChallenge
     Next
+    
     Application.ScreenUpdating = True
     
 End Sub
